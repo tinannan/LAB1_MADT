@@ -1,6 +1,10 @@
 package com.example.lab1madt;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +24,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void onBtnChangeTextClick(View view) {
+        TextView tvChangeText = findViewById(R.id.tvChangeText);
+        tvChangeText.setText("A small piece of code in most general-purpose programming languages, this program is used to illustrate a language's basic syntax.");
+        tvChangeText.setGravity(Gravity.CENTER);
     }
 }
