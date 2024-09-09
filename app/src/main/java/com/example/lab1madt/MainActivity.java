@@ -1,6 +1,7 @@
 package com.example.lab1madt;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -31,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tvChangeText = findViewById(R.id.tvChangeText);
         tvChangeText.setText("A small piece of code in most general-purpose programming languages, this program is used to illustrate a language's basic syntax.");
         tvChangeText.setGravity(Gravity.CENTER);
+    }
+
+    public void onBtnChangeTextColourClick(View view) {
+        TextView tvChangeText = findViewById(R.id.tvChangeText);
+        tvChangeText.setTextColor(Color.parseColor("#A020F0"));
     }
 }

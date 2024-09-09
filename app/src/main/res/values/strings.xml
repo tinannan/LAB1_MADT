@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LAB 1 MADT</string>
     <string name="change_text">Change text</string>
+    <string name="change_text_colour">Change text colour</string>
 </resources>
